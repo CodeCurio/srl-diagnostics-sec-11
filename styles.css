@@ -451,7 +451,7 @@ button[type="submit"]:hover {
 @media (max-width: 480px) {
     .main{
         width: 100%;
-        background-position: center;
+        background-position: end;
     }
 
     .herotext {
@@ -503,25 +503,40 @@ button[type="submit"]:hover {
 }
 @media (max-width: 380px) {
     .main{
-        width: 100%;
-        background-position: center;
+        height: 100%;
+        width: 100vw;
+        background-image: url(./assets/heroimgmobile.jpg);
+        background-repeat: no-repeat;
+        background-position: 100%;
+    }
+    #navbar{
+        margin-top: -18vw;
     }
 
+    
     .herotext {
-        font-size: 6vw;
+        font-size: 7vw;
         padding: 10vw;
-        
+        border-bottom: 1px solid black;
     }
-
+    .herotext h1{
+        width: 77vw;
+        text-align: center;
+        text-decoration: none;
+        margin-top: -4vw;
+    }
 
     .herotext p {
-        font-size: 4.5vw;
+        font-size: 4.2vw;
         color: #000;
+        background-color: #c8c5c584;
         text-align: start;
-        margin-top: 5vh;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
     }
     .herotext button{
-        margin-top: 6vh;
+        margin-top: 2vh;
     }
 
     .footer h2 {
