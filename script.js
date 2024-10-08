@@ -1,6 +1,9 @@
-const menuIcon = document.getElementById('menu-icon');
-const mobileMenu = document.getElementById('mobile-menu');
 
+// Get the menu icon and navbar elements
+const menuIcon = document.getElementById('menu-icon');
+const navright = document.getElementById('navright');
+
+// Add event listener to the menu icon
 menuIcon.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active'); // Toggle visibility
+    navright.classList.toggle('active'); // Toggle the 'active' class
 });

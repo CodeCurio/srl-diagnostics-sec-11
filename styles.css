@@ -53,6 +53,7 @@ body {
     color: #5A5A5A;
 }
 
+/* Styling for links and button */
 #navbar a {
     text-decoration: none;
     color: #5A5A5A;
@@ -69,7 +70,6 @@ body {
     border-radius: 40px;
     cursor: pointer;
     color: #fff;
-    text-decoration: none;
 }
 
 #navbar button i {
@@ -77,6 +77,36 @@ body {
     font-size: large;
     text-align: center;
 }
+
+/* Menu Icon */
+.menu-icon {
+    display: none; /* Hide menu icon by default */
+    cursor: pointer; /* Pointer for the menu icon */
+}
+
+/* Responsive styles */
+@media (max-width: 1023px) {
+    #navright {
+        display: none; /* Hide the navbar items by default */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position it above content */
+        background-color: white; /* Background color */
+        width: 100%; /* Full width */
+        top: 10vh; /* Below the navbar */
+        left: 0; /* Align to the left */
+        z-index: 1; /* Make sure it’s on top */
+        padding: 1rem 0; /* Optional padding */
+    }
+
+    #navright.active {
+        display: flex; /* Show when active */
+    }
+
+    .menu-icon {
+        display: initial; /* Show menu icon on mobile */
+    }
+}
+
 
 .herotext {
     font-size: 2vw;
@@ -386,15 +416,7 @@ button[type="submit"]:hover {
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-    #navbar {
-        flex-direction: column;
-        height: auto;
-    }
 
-    #navright {
-        width: 100%;
-        justify-content: center;
-    }
 
     .herotext {
         font-size: 3vw;
@@ -416,10 +438,10 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
-    #navright {
+    /* #navright {
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
     .column {
         width: 100%;
@@ -455,12 +477,20 @@ button[type="submit"]:hover {
     }
 
     .herotext {
-        font-size: 5vw;
-        padding: 12vw;
+        font-size: 4.5vw;
+        padding: 10vw;
+        
     }
 
     .herotext p {
         font-size: 3vw;
+        color: #000;
+        font-weight: 100;
+        text-align: start;
+        margin-top: 5vh;
+    }
+    .herotext button{
+        margin-top: 12vh;
     }
 
     .footer h2 {
@@ -477,5 +507,8 @@ button[type="submit"]:hover {
 
     .footer-link {
         font-size: 0.8rem;
+    }
+    .about-section{
+        margin-top: 10vh;
     }
 }
