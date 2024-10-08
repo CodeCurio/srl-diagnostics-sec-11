@@ -501,8 +501,8 @@ button[type="submit"]:hover {
     max-width: 100vw;
     font-size: 0.7rem;
     }
-    }
-}
+ }
+
 @media (max-width: 380px) {
     .main{
         height: 100%;
