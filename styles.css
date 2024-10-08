@@ -444,6 +444,11 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 480px) {
+    #navright{
+        display: none;
+        
+    }
+
     #navbar button {
         font-size: 0.8rem;
         padding: 5px 10px;
