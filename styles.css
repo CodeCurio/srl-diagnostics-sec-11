@@ -497,8 +497,10 @@ button[type="submit"]:hover {
         width: 100vw;
     }
     .contact-item{
+    flex-direction: column;
     max-width: 100vw;
     font-size: 0.7rem;
+    }
     }
 }
 @media (max-width: 380px) {
