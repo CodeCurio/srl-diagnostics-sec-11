@@ -9,6 +9,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -103,6 +104,7 @@ body {
     }
 
     .menu-icon {
+        font-size: 2rem;
         display: initial; /* Show menu icon on mobile */
     }
 }
@@ -416,17 +418,26 @@ button[type="submit"]:hover {
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-
+    #navbar{
+        height: 15%;
+        width: 100%;
+    }
+    #navleft{
+        width: 20%;
+    }
 
     .herotext {
-        font-size: 3vw;
+        font-size: 6vw;
     }
 
     .herotext p {
-        font-size: 2vw;
+        font-size: 3vw;
         width: 100%;
     }
-
+    .herotext button{
+        padding: 20px 30px;
+        margin-top: 12vw;
+    }
     .contact-section h1,
     .services-section h1 {
         font-size: 2rem;
@@ -437,11 +448,7 @@ button[type="submit"]:hover {
     }
 }
 
-@media (max-width: 768px) {
-    /* #navright {
-        flex-direction: column;
-        align-items: center;
-    } */
+/* @media (max-width: 768px) {
 
     .column {
         width: 100%;
@@ -463,34 +470,28 @@ button[type="submit"]:hover {
     .footer h2 {
         font-size: 1.5rem;
     }
-}
+} */
 
 @media (max-width: 480px) {
-    #navright{
-        display: none;
-        
-    }
-
-    #navbar button {
-        font-size: 0.8rem;
-        padding: 5px 10px;
+    .main{
+        width: 100%;
+        background-position: center;
     }
 
     .herotext {
-        font-size: 4.5vw;
+        font-size: 7vw;
         padding: 10vw;
         
     }
 
     .herotext p {
-        font-size: 3vw;
+        font-size: 4.5vw;
         color: #000;
-        font-weight: 100;
         text-align: start;
         margin-top: 5vh;
     }
     .herotext button{
-        margin-top: 12vh;
+        margin-top: 6vh;
     }
 
     .footer h2 {
@@ -509,6 +510,14 @@ button[type="submit"]:hover {
         font-size: 0.8rem;
     }
     .about-section{
-        margin-top: 10vh;
+        margin-top: 15vh;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .card{
+        width: 100%;
     }
 }
