@@ -488,14 +488,18 @@ button[type="submit"]:hover {
     .about-section{
         margin-top: 15vh;
     }
-    .column{
+    .column {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100vw;
-    }
-    .card{
-        width: 100vw;
-    }
+      }
+      .card {
+        width: 90vw;
+        background-position: center;
+        margin-right: 20px;
+      }
     .contact-item{
     flex-direction: column;
     max-width: 100vw;
@@ -559,14 +563,18 @@ button[type="submit"]:hover {
     .about-section{
         margin-top: 15vh;
     }
-    .column{
+    .column {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100vw;
-    }
-    .card{
-        width: 100vw;
-    }
+      }
+      .card {
+        width: 90vw;
+        background-position: center;
+        margin-right: 20px;
+      }
     .contact-item{
     flex-direction: column;
     width: 100vw;
